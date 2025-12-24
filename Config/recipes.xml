@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/recipes">
+    <recipe name="meleeToolGardenSpade" count="1" tags="meleeToolGardenSpade">
+      <ingredient name="resourceForgedIron" count="10"/>
+      <ingredient name="resourceWood" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+      <ingredient name="resourceDuctTape" count="2"/>
+      <ingredient name="resourceLegendaryParts" count="0"/>
+
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5"
+                        tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+        <passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1"
+                        tags="resourceLegendaryParts"/>
+      </effect_group>
+    </recipe>
+  </append>
+</configs>

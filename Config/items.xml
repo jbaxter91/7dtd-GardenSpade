@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/items">
+    <item name="meleeToolGardenSpade">
+        
+      <property name="Extends" value="meleeToolShovelT1IronShovel"/>
+      <property name="Icon" value="garden-spade160x"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="CustomIcon" value="garden-spade160x"/>
+      <property name="TintColor" value="70,120,70"/>
+      <property name="ModSlots" value="4"/>
+      <property name="AllowedMods" value="modGrip,modStructuralBrace,modErgonomicHandle,modIronBreaker,modBunkerBuster,modDiamondTip,modBurningShaft"/>
+
+      <property name="DescriptionKey" value="meleeToolGardenSpadeDesc"/>
+      <property name="RepairTools" value="resourceRepairKit"/>
+      <effect_group name="GardenSpadeEffects">
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="200" tags="primary"/>
+        <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.75,-.50,-.40,-.3,-.2,0" tier="1,2,3,4,5,6" tags="primary"/>
+        <passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+        <passive_effect name="StaminaLoss" operation="perc_add" value="-.1,-.2,-.4,-.6,-.5,-.8" tier="1,2,3,4,5,6" tags="primary"/>
+        <passive_effect name="EntityDamage" operation="base_set" value="1" tags="primary"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="2" tags="primary"/>
+        <passive_effect name="HarvestCount" operation="perc_add" value=".2,.4,.6,.8,1,1.2" tier="1,2,3,4,5,6" tags="farmerBonusHarvest"/>
+        <passive_effect name="HarvestCount" operation="perc_add" value=".2,.4,.6,.8,1,1.2" tier="1,2,3,4,5,6" tags="farmerBonusSeed"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="25" tags="plant"/>
+      </effect_group>
+    </item>
+  </append>
+</configs>

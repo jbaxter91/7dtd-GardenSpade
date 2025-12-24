@@ -1,0 +1,3 @@
+Key,Source,Context,English
+meleeToolGardenSpade,Mod,ItemName,Garden Spade
+meleeToolGardenSpadeDesc,Mod,ItemDesc,A fast harvesting Spade that yields extra crops with quality.

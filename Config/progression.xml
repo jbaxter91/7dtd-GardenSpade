@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+  <!-- Add Garden Spade to the same crafting skill as the iron shovel -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group">
+
+    <!-- Unlock the recipe at the same point iron tools unlock (level 11+) -->
+    <passive_effect name="RecipeTagUnlocked"
+                    operation="base_set"
+                    level="11,100"
+                    value="1"
+                    tags="meleeToolGardenSpade"/>
+
+    <!-- Give it the same CraftingTier ramp as iron tools:
+         levels 13/16/19/22/25 => tiers 1/2/3/4/5/5 => Q2..Q6 -->
+    <passive_effect name="CraftingTier"
+                    operation="base_add"
+                    level="13,16,19,22,25,100"
+                    value="1,2,3,4,5,5"
+                    tags="meleeToolGardenSpade"/>
+
+  </append>
+
+</configs>
