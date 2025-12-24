@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="UIAtlases/ItemIconAtlas/garden-spade160x.png" alt="Garden Spade Icon" width="80" height="80">
+</p>
+
 # GardenSpade Mod for 7 Days to Die
 
 ## Overview
